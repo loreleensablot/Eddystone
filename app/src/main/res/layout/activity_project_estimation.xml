@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="32dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+                android:weightSum="20">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/icon_background"
+                    android:id="@+id/backNRLYT">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@raw/ic_back"
+                        android:tint="@android:color/white"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:layout_weight="19">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="loading..."
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_weight="10"
+                        android:textSize="16dp"
+                        android:id="@+id/projectNameTXTVW"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="loading..."
+                        android:textColor="@android:color/white"
+                        android:layout_weight="10"
+                        android:textSize="12dp"
+                        android:id="@+id/subtitleTXTVW"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/icon_background"
+                    android:id="@+id/saveNRLYT"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@raw/ic_save"
+                        android:tint="@android:color/white"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="32dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/black_background"
+                        android:padding="12dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:id="@+id/volumeLNRLYT">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="loading..."
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:textSize="14dp"
+                            android:gravity="center"
+                            android:id="@+id/unitTitleTXTVW"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+
+                            <EditText
+                                android:layout_width="33dp"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:textSize="16dp"
+                                android:inputType="number"
+                                android:gravity="center_vertical"
+                                android:background="@drawable/estimation_yellow_background"
+                                android:paddingHorizontal="2dp"
+                                android:layout_marginHorizontal="12dp"
+                                android:id="@+id/volumeDTTX"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="loading"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold"
+                                android:id="@+id/unitTXTVW"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/black_background"
+                        android:padding="12dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:id="@+id/preferredTimeLNRLYT">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Preferred Time"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:textSize="14dp"
+                            android:gravity="center"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+
+                            <EditText
+                                android:layout_width="33dp"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:textSize="16dp"
+                                android:inputType="number"
+                                android:gravity="center_vertical"
+                                android:background="@drawable/estimation_yellow_background"
+                                android:paddingHorizontal="2dp"
+                                android:layout_marginHorizontal="12dp"
+                                android:id="@+id/preferredTimeDTTX"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="day/s"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="18dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/black_background"
+                        android:padding="12dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:id="@+id/numberOfDaysLNRLYT">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="No. of days"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:textSize="14dp"
+                            android:gravity="center"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+
+                            <EditText
+                                android:layout_width="33dp"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:textSize="16dp"
+                                android:inputType="number"
+                                android:gravity="center_vertical"
+                                android:background="@drawable/estimation_white_background"
+                                android:paddingHorizontal="2dp"
+                                android:layout_marginHorizontal="12dp"
+                                android:id="@+id/numberOfDaysDTTX"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="day/s"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/black_background"
+                        android:padding="12dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:id="@+id/numberOfWorkersLNRLYT">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="No. of workers"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:textSize="14dp"
+                            android:gravity="center"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+
+                            <EditText
+                                android:layout_width="33dp"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:textSize="16dp"
+                                android:inputType="number"
+                                android:gravity="center_vertical"
+                                android:background="@drawable/estimation_white_background"
+                                android:paddingHorizontal="2dp"
+                                android:layout_marginHorizontal="12dp"
+                                android:id="@+id/numberOfWorkersDTTX"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="worker/s"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="149dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="18dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/horizontalSCRLLVW">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="149dp"
+                                android:orientation="vertical"
+                                android:background="@drawable/black_background"
+                                android:padding="12dp"
+                                android:layout_weight="1"
+                                android:layout_marginEnd="8dp"
+                                android:id="@+id/carpenterLNRLYT">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Carpenter"
+                                    android:textColor="@android:color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:gravity="center"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+
+                                    <EditText
+                                        android:layout_width="33dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@android:color/black"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:gravity="center_vertical"
+                                        android:inputType="number"
+                                        android:background="@drawable/estimation_white_background"
+                                        android:paddingHorizontal="2dp"
+                                        android:layout_marginHorizontal="12dp"
+                                        android:id="@+id/carpenterDTTX"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="worker/s"
+                                        android:textColor="@android:color/white"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="149dp"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/black_background"
+                                android:padding="12dp"
+                                android:layout_weight="1"
+                                android:id="@+id/laborerLNRLYT">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Laborer"
+                                    android:textColor="@android:color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:gravity="center"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+
+                                    <EditText
+                                        android:layout_width="33dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@android:color/black"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:gravity="center_vertical"
+                                        android:inputType="number"
+                                        android:background="@drawable/estimation_white_background"
+                                        android:paddingHorizontal="2dp"
+                                        android:layout_marginHorizontal="12dp"
+                                        android:id="@+id/laborerDTTX"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="worker/s"
+                                        android:textColor="@android:color/white"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="149dp"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/black_background"
+                                android:padding="12dp"
+                                android:layout_weight="1"
+                                android:id="@+id/masonLNRLYT">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mason"
+                                    android:textColor="@android:color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:gravity="center"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+
+                                    <EditText
+                                        android:layout_width="33dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@android:color/black"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:gravity="center_vertical"
+                                        android:inputType="number"
+                                        android:background="@drawable/estimation_white_background"
+                                        android:paddingHorizontal="2dp"
+                                        android:layout_marginHorizontal="12dp"
+                                        android:id="@+id/masonDTTX"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="worker/s"
+                                        android:textColor="@android:color/white"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="149dp"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/black_background"
+                                android:padding="12dp"
+                                android:layout_weight="1"
+                                android:id="@+id/steelManLNRLYT">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Steel Man"
+                                    android:textColor="@android:color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:gravity="center"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+
+                                    <EditText
+                                        android:layout_width="33dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@android:color/black"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:gravity="center_vertical"
+                                        android:inputType="number"
+                                        android:background="@drawable/estimation_white_background"
+                                        android:paddingHorizontal="2dp"
+                                        android:layout_marginHorizontal="12dp"
+                                        android:id="@+id/steelManDTTX"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="worker/s"
+                                        android:textColor="@android:color/white"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="149dp"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/black_background"
+                                android:padding="12dp"
+                                android:layout_weight="1"
+                                android:id="@+id/painterLNRLYT">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Painter"
+                                    android:textColor="@android:color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:gravity="center"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+
+                                    <EditText
+                                        android:layout_width="33dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@android:color/black"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:gravity="center_vertical"
+                                        android:inputType="number"
+                                        android:background="@drawable/estimation_white_background"
+                                        android:paddingHorizontal="2dp"
+                                        android:layout_marginHorizontal="12dp"
+                                        android:id="@+id/painterDTTX"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="worker/s"
+                                        android:textColor="@android:color/white"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="149dp"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/black_background"
+                                android:padding="12dp"
+                                android:layout_weight="1"
+                                android:id="@+id/electricianLNRLYT">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Electrician"
+                                    android:textColor="@android:color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:gravity="center"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+
+                                    <EditText
+                                        android:layout_width="33dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@android:color/black"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:gravity="center_vertical"
+                                        android:inputType="number"
+                                        android:background="@drawable/estimation_white_background"
+                                        android:paddingHorizontal="2dp"
+                                        android:layout_marginHorizontal="12dp"
+                                        android:id="@+id/electricianDTTX"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="worker/s"
+                                        android:textColor="@android:color/white"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="149dp"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/black_background"
+                                android:padding="12dp"
+                                android:layout_weight="1"
+                                android:id="@+id/plumberLNRLYT">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Plumber"
+                                    android:textColor="@android:color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:gravity="center"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+
+                                    <EditText
+                                        android:layout_width="33dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@android:color/black"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:gravity="center_vertical"
+                                        android:inputType="number"
+                                        android:background="@drawable/estimation_white_background"
+                                        android:paddingHorizontal="2dp"
+                                        android:layout_marginHorizontal="12dp"
+                                        android:id="@+id/plumberDTTX"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="worker/s"
+                                        android:textColor="@android:color/white"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="149dp"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/black_background"
+                                android:padding="12dp"
+                                android:layout_weight="1"
+                                android:id="@+id/tileManLNRLYT">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tile Man"
+                                    android:textColor="@android:color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:gravity="center"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+
+                                    <EditText
+                                        android:layout_width="33dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@android:color/black"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:gravity="center_vertical"
+                                        android:inputType="number"
+                                        android:background="@drawable/estimation_white_background"
+                                        android:paddingHorizontal="2dp"
+                                        android:layout_marginHorizontal="12dp"
+                                        android:id="@+id/tileManDTTX"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="worker/s"
+                                        android:textColor="@android:color/white"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="149dp"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/black_background"
+                                android:padding="12dp"
+                                android:layout_weight="1"
+                                android:id="@+id/doorAndWindowInstallerLNRLYT">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Door and\nWindow\nInstaller"
+                                    android:textColor="@android:color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:gravity="center"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+
+                                    <EditText
+                                        android:layout_width="33dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@android:color/black"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:gravity="center_vertical"
+                                        android:inputType="number"
+                                        android:background="@drawable/estimation_white_background"
+                                        android:paddingHorizontal="2dp"
+                                        android:layout_marginHorizontal="12dp"
+                                        android:id="@+id/doorAndWindowInstallerDTTX"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="worker/s"
+                                        android:textColor="@android:color/white"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="149dp"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/black_background"
+                                android:padding="12dp"
+                                android:layout_weight="1"
+                                android:id="@+id/tinsmithLNRLYT">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tinsmith"
+                                    android:textColor="@android:color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:gravity="center"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+
+                                    <EditText
+                                        android:layout_width="33dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@android:color/black"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:gravity="center_vertical"
+                                        android:inputType="number"
+                                        android:background="@drawable/estimation_white_background"
+                                        android:paddingHorizontal="2dp"
+                                        android:layout_marginHorizontal="12dp"
+                                        android:id="@+id/tinsmithDTTX"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="worker/s"
+                                        android:textColor="@android:color/white"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="149dp"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/black_background"
+                                android:padding="12dp"
+                                android:layout_weight="1"
+                                android:id="@+id/welderLNRLYT">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Welder"
+                                    android:textColor="@android:color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:gravity="center"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+
+                                    <EditText
+                                        android:layout_width="33dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@android:color/black"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"
+                                        android:gravity="center_vertical"
+                                        android:inputType="number"
+                                        android:background="@drawable/estimation_white_background"
+                                        android:paddingHorizontal="2dp"
+                                        android:layout_marginHorizontal="12dp"
+                                        android:id="@+id/welderDTTX"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="worker/s"
+                                        android:textColor="@android:color/white"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:background="@color/black"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="32dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/black_background"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cost of Labor"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/estimation_white_background"
+                    android:paddingHorizontal="12dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:id="@+id/costOfLaborTXTVW"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PHP"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

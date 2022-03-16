@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="32dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+                android:weightSum="20">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/icon_background"
+                    android:id="@+id/backNRLYT">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@raw/ic_back"
+                        android:tint="@android:color/white"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:layout_weight="19">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="loading..."
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_weight="10"
+                        android:textSize="20dp"
+                        android:id="@+id/projectNameTXTVW"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="loading..."
+                        android:textColor="@android:color/white"
+                        android:layout_weight="10"
+                        android:textSize="12dp"
+                        android:id="@+id/subtitleTXTVW"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <Spinner
+                    android:layout_height="40dp"
+                    android:id="@+id/spinner"
+                    android:layout_width="6dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:theme="@style/SpinnerwithNoArrow"
+                    android:background="@raw/ic_dots"
+                    android:backgroundTint="@color/white"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/layout1"
+                android:paddingHorizontal="22dp">
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

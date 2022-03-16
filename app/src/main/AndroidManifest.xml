@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pro.gr.ams.eddystone">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@raw/logo001"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:process=":second"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeDefault"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ProjectEstimationActivity"
+            android:exported="false"
+            android:theme="@style/MainThemeDefault"/>
+        <activity
+            android:name=".ProjectSubcategoryActivity"
+            android:exported="false"
+            android:theme="@style/MainThemeDefault" />
+        <activity
+            android:name=".UpdateProgressActivity"
+            android:exported="false"
+            android:theme="@style/PopAct" />
+        <activity
+            android:name=".WorkersRateActivity"
+            android:exported="false"
+            android:theme="@style/MainThemeDefault" />
+        <activity
+            android:name=".ProjectDetailsActivity"
+            android:exported="false"
+            android:theme="@style/MainThemeDefault" />
+        <activity
+            android:name=".ListOfProjectsActivity"
+            android:exported="false"
+            android:theme="@style/MainThemeDefault" />
+        <activity
+            android:name=".NewProjectActivity"
+            android:exported="false"
+            android:theme="@style/PopAct" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false"
+            android:theme="@style/PopAct" />
+        <activity
+            android:name=".MainEngineerActivity"
+            android:exported="false"
+            android:theme="@style/MainThemeDefault" />
+        <activity
+            android:name=".MainClientActivity"
+            android:exported="false"
+            android:theme="@style/MainThemeDefault" />
+        <activity
+            android:name=".LogOutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerifyAccountActivity"
+            android:exported="false"
+            android:theme="@style/PopAct" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/MainThemeDefault">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

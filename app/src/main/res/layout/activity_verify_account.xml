@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="290dp"
+    android:layout_height="169dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#1e1c1b">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:paddingHorizontal="3dp"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="@android:dimen/thumbnail_width"
+                android:gravity="center_vertical"
+                android:shadowColor="@color/black"
+                android:text="Verify Account"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:elevation="@android:dimen/thumbnail_width"
+                android:gravity="center"
+                android:shadowColor="@color/black"
+                android:text="⇆"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:background="@android:color/holo_red_dark"
+                android:layout_marginStart="-40dp"
+                android:layout_marginTop="-10dp"
+                android:id="@+id/switchAccountTXTVW"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#302c2c"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <EditText
+                android:id="@+id/validationCodeDTTXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Check your email for the code"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/resendCodeBTTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resend Code"
+                    android:textAllCaps="false"
+                    android:background="@android:color/transparent"
+                    android:textAlignment="textEnd"
+                    android:paddingEnd="10dp"/>
+
+                <Button
+                    android:id="@+id/submitBTTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:background="@android:color/transparent"
+                    android:textAlignment="textEnd"
+                    android:paddingEnd="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#1e1c1b"
+        android:layout_alignParentBottom="true">
+    </LinearLayout>
+
+</RelativeLayout>

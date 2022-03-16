@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#003049"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="35dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/logInLNRLYT">
+
+        <de.hdodenhof.circleimageview.CircleImageView android:layout_width="wrap_content" android:layout_height="200dp"
+            android:src="@raw/logo001"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="-40dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Email"
+            android:textColor="#f0f0f0"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/login_edittext"
+            android:paddingHorizontal="10dp"
+            android:id="@+id/emailDTTXT"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Password"
+            android:textColor="#f0f0f0"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:background="@drawable/login_edittext"
+            android:paddingHorizontal="10dp"
+            android:id="@+id/passwordDTTXT"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login_button"
+            android:text="LOG IN"
+            android:textColor="@android:color/white"
+            android:id="@+id/loginBTTN"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="22dp"
+            android:padding="5dp">
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="2px"
+                android:layout_weight="6"
+                android:background="#0A79B3"></LinearLayout>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="or"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#0A79B3"/>
+
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="2px"
+                android:layout_weight="6"
+                android:background="#0A79B3"></LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/register_button"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:id="@+id/registerBTTN"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="By continuing you agree to the Terms and Condition"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="11dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
